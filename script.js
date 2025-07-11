@@ -1,5 +1,3 @@
-// Place your JavaScript code here
-
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mainNav = document.querySelector('.main-nav');
 const header = document.getElementById('header');
