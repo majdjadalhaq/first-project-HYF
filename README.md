@@ -2,6 +2,7 @@
 # 🌐 Majd Jad Alhaq | Developer Portfolio
 
 Welcome to my personal developer portfolio. This website showcases my background, skills, and journey into full-stack development through HackYourFuture.
+to check it open this link https://majdjadalhaq.github.io/first-project-HYF/
 
 ## ✨ Features
 
