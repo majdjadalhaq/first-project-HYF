@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Majd Jad Alhaq | Developer Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    majd
+    <header id="header">
+        <div class="container">
+            <div class="header-left">
+                <a href="#" class="logo">Majd <span>Jad Alhaq</span></a>
+            </div>
+            <div class="header-right">
+                <!-- Language toggle button with ARIA attributes -->
+                <div class="lang-toggle-wrapper">
+                    <i class="fas fa-globe"></i>
+                    <button id="langToggle" aria-label="Toggle Language" aria-pressed="false">EN</button>
+                </div>
+                <!-- Dark mode toggle button with ARIA attributes -->
+                <div class="dark-mode-toggle-wrapper">
+                    <i class="fas fa-moon"></i>
+                    <button id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false">Dark Mode</button>
+                </div>
+                <!-- Mobile menu toggle button with ARIA attributes -->
+                <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main navigation with ARIA attributes -->
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="#about" class="nav-link" data-key="navAbout" tabindex="0">About</a></li>
+            <li><a href="#journey" class="nav-link" data-key="navJourney" tabindex="0">Journey</a></li>
+            <li><a href="#why-me" class="nav-link" data-key="navWhy" tabindex="0">Why Me?</a></li>
+            <li><a href="#contact" class="nav-link" data-key="navContact" tabindex="0">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <h1 data-key="heroTitle" class="animate-on-scroll fade-in-up">From Palestine to Code</h1>
+            <p data-key="heroDesc" class="animate-on-scroll fade-in-up delay-1">
+                Finding hope through HackYourFuture and following my true passion. After moving to the Netherlands, HackYourFuture gave me a second chance to follow my tech dreams.
+            </p>
+            <div class="hero-buttons animate-on-scroll fade-in-up delay-2">
+                <a href="#contact" class="btn btn-primary" data-key="btnContact">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </a>
+                <a href="#journey" class="btn btn-secondary" data-key="btnJourney">
+                    <i class="fas fa-user-graduate"></i> My Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-key="aboutTitle" class="animate-on-scroll fade-in-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll slide-in-left">
+                    <p data-key="aboutP1">
+                        I'm Majd Jad Alhaq, a 26-year-old from Palestine. I started with Computer Science before switching to Law due to circumstances, but coding was always my true passion. After moving to the Netherlands, HackYourFuture gave me a second chance to follow my tech dreams.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="section">
+        <div class="container">
+            <h2 data-key="journeyTitle" class="animate-on-scroll fade-in-up">My Journey</h2>
+            <div class="timeline animate-on-scroll scale-in">
+                <div class="timeline-line"></div>
+                <div class="timeline-items" id="timeline-items">
+                    <!-- Timeline items will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-me" class="section">
+        <div class="container">
+            <h2 class="animate-on-scroll fade-in-up" data-key="whyTitle">Why You Should Accept Me</h2>
+            <div class="why-content">
+                <p data-key="whyIntro" class="animate-on-scroll fade-in-up">
+                    I survived law school AND a war zone - your tight deadlines don't scare me! My unique background gives me both technical skills and unparalleled resilience. Jokes aside, I bring:
+                </p>
+                <div class="skill-bubbles animate-on-scroll scale-in" id="skill-bubbles">
+                    <!-- Skill bubbles will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-key="contactTitle" class="animate-on-scroll fade-in-up">Contact Me</h2>
+            <div class="contact-content animate-on-scroll slide-in-right">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:majdhamde1901@gmail.com">majdhamde1901@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:0653153537">06 53 15 35 37</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Majd <span>Jad Alhaq</span></a>
+                <div class="copyright">
+                    <p>&copy; 2025 Majd Jad Alhaq. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="topBtn" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div aria-live="polite" class="sr-only" id="announcer"></div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
