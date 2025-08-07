@@ -76,10 +76,6 @@ To customize this portfolio for your own use:
 
 This is a personal portfolio project. However, if you find any issues or have suggestions, feel free to open an issue or contact me.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 📞 Contact
 
 - **Email**: [majdhamde1901@gmail.com](mailto:majdhamde1901@gmail.com)
